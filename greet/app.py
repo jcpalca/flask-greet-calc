@@ -9,3 +9,8 @@ def welcome():
     html = "<html><body><h1>welcome</h1></body></html>"
     return html
 
+@app.get("/welcome/home")
+def welcome_home():
+    """Return simple 'welcome home' greeting"""
+    html = "<html><body><h1>welcome home</h1></body></html>"
+    return html
